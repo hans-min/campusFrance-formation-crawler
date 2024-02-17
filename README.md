@@ -4,12 +4,12 @@ and find the keyword "apprentice", "apprentissage", or whatever keywords you wan
 
 
 Cool formation that I tried myself:
-- CNAM ENJMIN - Licence Informatique Jeux Video:
+- CNAM ENJMIN - Licence Informatique Jeux Video (I found out about this school by reading a book):
   - apprenticeship from year 1 (after 3 months at school)
   - Fully distance-learning, you just have to come to school twice every year, 1 week each
   - Learn about video games development (Unity, UE4), game and level design, 3D (blender), sound design etc...Very generalist
   - You got 1 final game projects to develop in a team every year (super concrete). Example of my 3rd project: https://hans-min.itch.io/crashed-world, where I was in charge of the procgen of the map.
-- CAWEB - Universite de Strasbourg
+- CAWEB - Universite de Strasbourg (https://foad.campusfrance.org/#/program/1035)
   - Quite flexible, they let me in M2 directly since I have some professional experience from my previous apprentice from CNAM ENJMIN ;)
   - Every course is in English (noice)
   - Also fully distance-learning, just 1 week in October where you have to come to school
