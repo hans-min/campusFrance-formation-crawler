@@ -1,7 +1,9 @@
-There are a few cool formations that , but how to find em ? I have spent a lot of time finding cool formation that have apprenticeship, distance learning and available in English.
+There are a few cool formations in France that have apprenticeship, distance learning and available in English, but how to find em ? I saw on Campus France 2 pages that give you a [list of courses Taught In English](https://taughtie.campusfrance.org/tiesearch/#/catalog) or [Online Course](https://foad.campusfrance.org/#/search)
 So I created this crawler in Python to go through all the formations/programs available on this [Campus France list](https://www.campusfrance.org/fr/trouver-formation-universitaire-France), 
 and find the keyword "apprentice", "apprentissage", or whatever keywords you want.
 
+Python package requirements:
+`pip install selenium, webdriver_manager`
 
 Cool formation that I tried myself:
 - CNAM ENJMIN - Licence Informatique Jeux Video (I found out about this school by reading a book):
