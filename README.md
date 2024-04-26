@@ -4,8 +4,10 @@ and find the keyword "apprentice", "apprentissage", or whatever keywords you wan
 
 Python package requirements:
 `pip install selenium, webdriver_manager`
+<details>
 
-Cool formation that I tried myself:
+<summary> Cool formation that I tried myself </summary>
+
 - CNAM ENJMIN - Licence Informatique Jeux Video (I found out about this school by reading a book):
   - apprenticeship from year 1 (after 3 months at school)
   - Fully distance-learning, you just have to come to school twice every year, 1 week each
@@ -20,3 +22,5 @@ Cool formation that I tried myself:
   - Quite some practice on web development: I created 2 websites:
     - https://github.com/hans-min/mini-project-CAWEB: A website that teach you about async in JS, cat-theme, check it out 
     - My personal portfolio: Still working on it, coming soon
+
+</details>
