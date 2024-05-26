@@ -30,7 +30,7 @@ def go_to_next_page(page_number):
         EC.element_to_be_clickable((By.XPATH, f"//a[contains(@ng-click, 'setCurrent') and contains(text(), '{page_number}')]")))
     element.click()
 
-def fetch_program_ids(base_url, page_range):
+def fetch_program_ids(base_url, page_range: int):
     '''
     Go to all the paginations and fetch all programs ids
     return: all program ids
@@ -65,13 +65,13 @@ def find_text_in_each_url(ids, words):
 def find_words_in_url(page_source, words):
     # Get the page source and convert to lower case for case-insensitive search
     lower_page_source = page_source.lower()
-    result = next((word for word in words if word.lower() in lower_page_source), None)
+    result = [word for word in words if word.lower() in lower_page_source]
     return result
 
 def crawl_all_pages(url, words, page_range=26):
     driver.get(base_url)
     select_option_from_dropdown("Fields", ["Engineering and Technology"])
-    select_option_from_dropdown("Level of degree", ["Master 2", "Master of Science"])
+    select_option_from_dropdown("Level of degree", ["Master 2"])
     found_ids = fetch_program_ids(base_url, page_range)
     print(f'Found {len(found_ids)} URLs to crawl')
     urls_to_visit_manually = find_text_in_each_url(found_ids, words)
@@ -87,7 +87,7 @@ chrome_options.add_argument("--start-maximized")
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
 base_url = 'https://taughtie.campusfrance.org/tiesearch/'
-words = ["apprentissage", "alternance", "apprentice", "work study", " dual", "sandwich", "work-study"]
-crawl_all_pages(base_url, words, 20)
+words = ["apprentissage", "alternance", "apprentice", " dual", "work-study", "online", "distance learning", "e-learning"]
+crawl_all_pages(base_url, words, 17)
 
 driver.quit()
